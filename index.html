@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mars Wheather App</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="weather-app">
+        
+            <div class="data-title">
+                <h1 class="app-title">Latest Weather at Elysium Planitia</h1>
+                <p class="loc-desc">InSight is taking daily weather measurement on the surface of Mars at Elysium Planitia,<br>
+                    a flat , smooth plain near Mars's equator.</p>
+            </div>
+    
+            <div class="display-data">
+    
+                <div class="day-data">
+                    <h1 style="color: #FF3031;">SOL <span  data-sol class="sol-day"></span></h1>
+                    <h3 class="date" data-sol-date></h3>
+                </div>
+    
+                <div class="season-data">
+                    <h1 >Season</h1>
+                    <h3 data-sol-season class="season"></h3>
+                </div>
+    
+                <div class="temp-data">
+                    <h1 >Temperature</h1>
+                    <h3>High : <span class="temp-high" data-sol-high-temp></span> °C </h3>
+                    <h3>Low : <span class="temp-low" data-sol-low-temp></span> °C </h3>
+                </div>
+    
+                <div class="wind-data">
+                    <h1 >Wind Direction</h1>
+                    <h3>Wind Speed: <span class="wind-speed" data-sol-wind-speed></span> kph</h3>
+                    <h3><span class="wind-direction" data-sol-wind-direction></span> Deg</h3>
+                    <h3><span class="wind-cardinal" data-sol-wind-cardinal></span></h3>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="mid-container">
+            <h1 class="mid-title">Previous Days</h1>
+            <div class="all-sol" data-sol-all>
+        </div>
+        
+            
+        </div>
+        
+    
+    
+    
+        <div class="container">
+            <h1 class="main-title">Astronomy Picture of the Day</h1>
+            <div class="pic-of-day">
+                <img src="" alt="" id="img-holder">
+                <div id="description">
+                    <h1 id='title'></h1>
+                    <p id="text"></p>
+                    <span id="copyright"></span>
+                    <span id="date"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <template data-sol-template>
+        <div class="sol-container">
+            <h3 class="">SOL <span data-sol-day-all></span></h3>
+            <p data-sol-date-all></p>
+            <p class='sol-data-high-temp' >High : <span data-sol-high-temp-all ></span></p>
+            <p class='sol-data-high-temp' >Low : <span data-sol-low-temp-all></span></p>
+            
+        </div>
+    </template>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    color: white;
+}
+.main-container{
+    background-image: url("astro3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+}
+.pic-of-day{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+#description{
+    margin: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+#copyright{
+    font-weight: bolder;
+    color: #FF3031;
+}
+#text{
+    margin: 15px 0 ;
+}
+
+#date{
+    color: #FF3031;
+}
+
+#img-holder{
+    width: auto;
+    height: 400px;
+}
+.main-title{
+    border: 2px solid white;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    color: #FF3031
+}
+
+
+/*top section*/
+.weather-app{
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);  
+    
+}
+
+.mid-container{
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+}
+.data-title{
+    display: flex;
+    flex-direction: column;
+    margin: 90px 0 ;
+    justify-content: left;
+    text-align: left;
+    margin-left: 150px ;
+}
+
+.display-data{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px;
+}
+.day-data{
+    text-align: left;
+    transition: all .2s ease-in-out;
+}
+
+.season-data{
+    text-align: left;
+    transition: all .2s ease-in-out;
+}
+.temp-data{
+    text-align: left;
+    transition: all .2s ease-in-out;
+}
+.wind-data{
+    text-align: left;
+    transition: all .2s ease-in-out;
+}
+.mid-title{
+    margin-left: 60px;
+}
+.day-data:hover, .season-data:hover,.wind-data:hover, .temp-data:hover, .sol-container:hover{
+    transform: scale(1.3);
+}
+.sol-container{
+    transition: all .2s ease-in-out;
+}
+
+.all-sol{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 90px 20px;
+}
+.app-title{
+    color: #FF3031
+}
