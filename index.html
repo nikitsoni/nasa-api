@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
     <title>Mars Wheather App</title>
 </head>
 
 <body>
 
     <div class="main-container">
+        <header>
         <div class="weather-app">
+
+            <nav>
+                <a href="#footer">About</a>
+                <a href="#description">Picture of the day</a>
+                <a href="#calendar">Calendar</a>
+            </nav>
         
             <div class="data-title">
                 <h1 class="app-title">Latest Weather at Elysium Planitia</h1>
@@ -45,16 +54,16 @@
     
             </div>
         </div>
+        </header>
     
-        <div class="mid-container">
-            <h1 class="mid-title">Previous Days</h1>
-            <div class="all-sol" data-sol-all>
+        <main>
+        <div id="trans1"></div>
+        <div id=calendar class="mid-container">
+            <h1 class="mid-title">Previous Days<hr></h1>
+            <div class="all-sol" data-sol-all></div>
         </div>
         
-            
-        </div>
-        
-    
+        <div id="trans2"></div>
     
     
         <div class="container">
@@ -70,16 +79,24 @@
             </div>
         </div>
 
+        <template data-sol-template>
+            <div class="sol-container">
+                <h3 class="" style="color: black;">SOL <span data-sol-day-all style="color:black"></span></h3>
+                <p data-sol-date-all style="color:black"></p>
+                <p class='sol-data-high-temp' >High : <span data-sol-high-temp-all style="color:black"></span></p>
+                <p class='sol-data-high-temp' >Low : <span data-sol-low-temp-all style="color:black"></span></p>
+                
+            </div>
+        </template>
+
+        </main>
     </div>
-    <template data-sol-template>
-        <div class="sol-container">
-            <h3 class="">SOL <span data-sol-day-all></span></h3>
-            <p data-sol-date-all></p>
-            <p class='sol-data-high-temp' >High : <span data-sol-high-temp-all ></span></p>
-            <p class='sol-data-high-temp' >Low : <span data-sol-low-temp-all></span></p>
-            
-        </div>
-    </template>
+    
+    <div id="trans3"></div>
+
+    <footer id="footer">
+        made by me
+    </footer>
     
     
     <script src="script.js"></script>
